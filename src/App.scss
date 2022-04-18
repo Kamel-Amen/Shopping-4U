@@ -1,0 +1,64 @@
+$mainColor: #ffeaa7;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Josefin Sans" !important;
+}
+
+/* Start Login Page */
+.login {
+  background: #000;
+  .leftSide {
+    margin: 25px 0 0 0;
+    padding-left: 50px;
+    .logo {
+      img {
+        width: 150px;
+        height: 150px;
+        box-shadow: 0 0 10px $mainColor;
+        border-radius: 50px 0;
+        transform: rotate(8deg);
+      }
+      p {
+        width: 435px;
+        color: $mainColor;
+        letter-spacing: 10px;
+        span {
+          font-style: italic;
+          animation: lightOn 0.75s ease-in-out infinite;
+        }
+      }
+    }
+    .words {
+      width: 95%;
+      color: #aaa;
+      letter-spacing: 3px;
+    }
+  }
+  .rightSide {
+    height: 100vh;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+/* End Login Page */
+
+/* Start Animation */
+@keyframes lightOn {
+  0%,
+  100% {
+    text-shadow: 0;
+  }
+  50% {
+    text-shadow: 0 0 10px $mainColor;
+  }
+}
+
+.clearFix {
+  clear: both;
+}
