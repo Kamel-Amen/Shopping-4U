@@ -1,9 +1,20 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* Variables */
 $mainColor: #ffeaa7;
 $secondary: #dc3545;
+$raleway: 'Raleway';
+$bangers: 'Bangers';
+$bowlby: 'Bowlby One SC';
+$lobster: 'Lobster';
 
 /* Start Navbar */
 .navbar {
-  font-family: "Raleway" !important;
+  font-family: $raleway !important;
   background: $mainColor;
   .logo-container {
     width: 70px;
@@ -22,8 +33,7 @@ $secondary: #dc3545;
     border-radius: 0 15px 15px 0;
   }
   .sec-1 {
-    height: 559px;
-    background: url("../img/Home/homeC.0.jpg") center/cover fixed no-repeat;
+    height: 575px;
     h1,
     h5 {
       color: $mainColor;
@@ -37,7 +47,7 @@ $secondary: #dc3545;
     }
     .btn {
       background-color: $mainColor;
-      font-family: "Bangers";
+      font-family: $bangers;
       transition: all 0.2s ease-in-out;
       &:hover {
         transform: scale(1.1, 1.1);
@@ -49,10 +59,11 @@ $secondary: #dc3545;
     .leftSide {
       header {
         text-decoration: underline;
+        color: #b82f3c;
       }
       p {
         width: 450px;
-        color: #444;
+        color: #777;
         letter-spacing: 1.5px;
       }
     }
@@ -60,12 +71,11 @@ $secondary: #dc3545;
       div {
         width: 80%;
         height: 90%;
-        border: 5px solid #f3cf58;
-        background-color: $mainColor;
+        border: 3px solid #f3cf58;
         img {
           width: 100%;
           height: 100%;
-          transform: translate(20px, 20px);
+          transform: translate(5px, 5px);
         }
       }
     }
@@ -96,7 +106,7 @@ $secondary: #dc3545;
     header {
       text-decoration: underline;
       color: #555;
-      font-family: "Poppins";
+      font-family: 'Poppins';
     }
     .sponsor {
       width: 32%;
@@ -104,13 +114,17 @@ $secondary: #dc3545;
       border: 3px solid #ccc;
       background-color: #aaa;
       cursor: pointer;
+      border-radius: 50%;
+      overflow: hidden;
       :hover {
         transition: transform 0.2s linear;
-        transform: scale(1.1, 1.1);
+        transform: scale(1.2, 1.2);
       }
       img {
+        transition: transform 0.1s linear;
         width: 100%;
         height: 100%;
+        transform: scale(1.1, 1.1);
       }
     }
   }
@@ -119,7 +133,7 @@ $secondary: #dc3545;
     height: 700px;
     header {
       color: $mainColor;
-      font-family: "Monoton" !important;
+      font-family: 'Monoton' !important;
       animation: letters 1s ease-in-out infinite;
     }
     .lamp:nth-of-type(2) {
@@ -190,7 +204,7 @@ $secondary: #dc3545;
 /* Start Add Product */
 .add-page {
   background: $mainColor;
-  font-family: "Bowlby One SC";
+  font-family: $bowlby;
 }
 .add-product {
   .form-group {
@@ -209,7 +223,7 @@ $secondary: #dc3545;
 /* Start Products */
 .products {
   background: #000;
-  font-family: "Lobster";
+  font-family: $lobster;
   .card {
     width: 31.9%;
     height: 325px;
@@ -234,7 +248,7 @@ $secondary: #dc3545;
       transition: background-color 0.3s ease-in-out;
     }
     button {
-      font-family: "Fugaz One";
+      font-family: 'Fugaz One';
       top: -5px;
       right: -25px;
       border-radius: 100% 0 0 0;
@@ -276,13 +290,12 @@ $secondary: #dc3545;
 /* Start About ME */
 .about {
   background: $secondary;
-  height: 559px;
+  height: 570.1px;
   a {
-    left: 604.5px;
-    transition: transform 0.2s ease-in-out;
-    &:hover {
-      transform: scale(1.2, 1.2);
-    }
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    transition: box-shadow 0.2s ease-in-out;
   }
 }
 /* End About ME */

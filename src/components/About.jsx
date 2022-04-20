@@ -8,10 +8,7 @@ class About extends React.Component {
       <div>
         <Navbar />
         <div className='about position-relative'>
-          <a
-            className='btn btn-dark btn-lg position-absolute top-50'
-            href={link}
-          >
+          <a className='btn btn-dark btn-lg position-absolute' href={link}>
             Contact Me
           </a>
         </div>

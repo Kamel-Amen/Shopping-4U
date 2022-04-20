@@ -3,7 +3,8 @@ import Navbar from './Navbar';
 import onlineS from '../img/Home/aboutUs.jpg';
 import onlineText from '../data/data.json';
 import getImg from './../data/images';
-import '../Files/comp.scss';
+import '../dist/Files/comp.css';
+import cover from '../img/Home/homeC.0.jpg';
 
 class Home extends React.Component {
   state = {
@@ -43,7 +44,12 @@ class Home extends React.Component {
           >
             UP
           </a>
-          <div className='sec-1 position-relative'>
+          <div
+            className='sec-1 position-relative'
+            style={{
+              background: `url(${cover}) center/cover fixed no-repeat`,
+            }}
+          >
             <div className='position-absolute top-50 start-50 translate-middle text-center'>
               <h1>Easy & Completable Shopping</h1>
               <h5 className='text-capitalize'>
